@@ -31,8 +31,8 @@ make DOCKER_IMAGE=ubuntu:16.04 \
      DOCKER_TARGETS="tests benchmarks tools examples" \
      -f "${MAKEFILE}" docker-build
 
-# Build for armv7a and aarch64.
-make DOCKER_IMAGE=debian:stretch \
-     DOCKER_CPUS="armv7a aarch64" \
-     DOCKER_TARGETS="tests benchmarks tools examples" \
-     -f "${MAKEFILE}" docker-build
+## Build for armv7a and aarch64.
+#make DOCKER_IMAGE=debian:stretch \
+#     DOCKER_CPUS="armv7a aarch64" \
+#     DOCKER_TARGETS="tests benchmarks tools examples" \
+#     -f "${MAKEFILE}" docker-build

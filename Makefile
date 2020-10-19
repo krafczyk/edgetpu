@@ -160,7 +160,7 @@ clean:
 	       $(MAKEFILE_DIR)/out
 
 DOCKER_WORKSPACE=$(MAKEFILE_DIR)
-DOCKER_CPUS=k8 armv7a aarch64
+DOCKER_CPUS=k8
 DOCKER_TAG_BASE=coral-edgetpu
 include $(MAKEFILE_DIR)/docker/docker.mk
 

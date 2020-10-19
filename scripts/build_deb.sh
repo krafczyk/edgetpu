@@ -18,7 +18,7 @@ set -x
 
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly MAKEFILE="${SCRIPT_DIR}/../Makefile"
-readonly CMD="make deb deb-armhf deb-arm64 wheel && mkdir -p dist && mv -f ../*.deb dist"
+readonly CMD="make deb wheel && mkdir -p dist && mv -f ../*.deb dist"
 
 "${SCRIPT_DIR}/build_swig.sh"
 
